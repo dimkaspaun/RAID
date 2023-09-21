@@ -88,8 +88,8 @@ mdadm --detail --scan --verbose | awk '/ARRAY/ {print}' >> /etc/mdadm/mdadm.conf
 
 ### 7.	Зафейлить диск
 
-**[root@otuslinux vagrant]# mdadm /dev/md0 --fail /dev/sde **
-mdadm: set /dev/sde faulty in /dev/md0***
+**[root@otuslinux vagrant]# mdadm /dev/md0 --fail /dev/sde** 
+mdadm: set /dev/sde faulty in /dev/md0
 
 **[root@otuslinux vagrant]# cat /proc/mdstat **
 Personalities : [raid6] [raid5] [raid4] 
